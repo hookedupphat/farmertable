@@ -11,7 +11,7 @@ const Filters = ({setSelectedState, setName, setisCrop, setIsSeed}) => {
       {/* U.S. State select box */}
         <SelectUSState
         id="selectState"
-        className="select-box"
+        className="select-box hover"
         onChange={setSelectedState}
       />
       </div>
@@ -21,7 +21,7 @@ const Filters = ({setSelectedState, setName, setisCrop, setIsSeed}) => {
         <input className="search-box" onChange={(e)=>setName(e.target.value)} type="text" placeholder="Name, City"/>
       </div>
       
-      {/* Crop checkbox */}
+      {/* Has crop protection checkbox */}
       <label 
       className="checkContainer checkContainerOne">
         Has Crop Protection Purchases
@@ -31,11 +31,12 @@ const Filters = ({setSelectedState, setName, setisCrop, setIsSeed}) => {
           onChange={(e)=>setisCrop(e.target.checked)} 
           id="flexCheckDefault">
           </input>
+        
               {/* Stylize checkboxes */}
               <span className="checkmark"></span>
       </label>
       
-      {/* Has purchases checkbox */}
+      {/* Has seed purchases checkbox */}
       <label 
       className="checkContainer checkContainerTwo">
         Has Seed Purchases
@@ -45,6 +46,7 @@ const Filters = ({setSelectedState, setName, setisCrop, setIsSeed}) => {
           onChange={(e)=>setIsSeed(e.target.checked)} 
           id="flexCheckDefault">
           </input>
+
                 {/* Stylize checkbox */}
                 <span className="checkmark"></span>
       </label>

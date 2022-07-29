@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react"
 const DisplayTable = ({ data }) => {
   const [list, setList] = useState([])
 
-  const handleClick = event => {
+// Sort names on click of column name
+  const sortNames = event => {
     // Sort header onclick event
     console.log(event.target);
     
@@ -13,6 +14,7 @@ const DisplayTable = ({ data }) => {
     setList(data)
   }, [data])
 
+// Display money in USD format with 2 decimal places
   let dollarUS = Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -21,6 +23,7 @@ const DisplayTable = ({ data }) => {
     maximumFractionDigits: 2,
   })
 
+// loop to map and return JSON data 
   let tb_data = list.map((item) => {
     return (
       <tr key={item.id}>
@@ -36,14 +39,15 @@ const DisplayTable = ({ data }) => {
       </tr>
     )
   })
-
+  
+// Table header
   return (
     <div>
       <div>Results: {list.length}</div>
       <table className="table">
         <thead>
           <tr>
-            <th onClick={(event) => handleClick(event, 'hello')}>
+            <th className="hover" onClick={sortNames}>
               Farmer Name{" "}
               <img
                 src="./down-arrow.png"

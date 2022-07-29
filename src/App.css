@@ -1,3 +1,4 @@
+
 body {
   padding: 5% 0%;
   margin: 0;
@@ -7,45 +8,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* Align crop protection spend column */
 .cp_spend {
   text-align: right;
 }
 
+/* Header bottom border */
 thead {
   border-bottom: 2px solid #94989a;
 }
 
+/* Give the numbers space to breathe */
 .seed_bags {
   text-indent: 20px;
 }
 
+/* border around the table */
 table {
   border: 2px solid #BDC2C5;
 }
 
+/* Everything in the table is uppercase */
 td {
   text-transform: uppercase;
 } 
 
+/* Apply grey divider and margin between filter elements */
 .search-box {
   margin-bottom: 30px;
   display: inline-block;
   border-right: 1px solid #DADCDE;
 }
 
+/* Give the number space to breathe */
 .resultNumb {
   padding-bottom: 10px;
-}
-
-.form-cheak{
-  top: 67px;
-  left: 575px;
-  width: 12px;
-  height: 7px;
-  /* UI Properties */
-  border: 3px solid #FFFFFF;
-  opacity: 1;
 }
 
 /* State select box */
@@ -61,7 +58,7 @@ select {
   border-radius: 1px;
 }
 
-/* Input text */
+/* Stylized input text same size as select box */
 input[type="text"] {
 box-sizing: border-box;
 -moz-box-sizing: border-box;
@@ -112,17 +109,17 @@ border-radius: 1px;
   border-radius: 1px;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over add a grey background color */
 .checkContainer:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked add a blue background */
 .checkContainer input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create the checkmark/indicator */
 .checkmark:after {
   content: "";
   position: absolute;
@@ -134,7 +131,7 @@ border-radius: 1px;
   display: block;
 }
 
-/* Style the checkmark/indicator */
+/* Style the checkmark */
 .checkContainer .checkmark:after {
   left: 4px;
   top: 0px;
@@ -147,24 +144,17 @@ border-radius: 1px;
   transform: rotate(45deg);
 }
 
+/* Contain the first checkbox and label */
 .checkContainerOne {
   width: 161px;
 }
 
+/* Contain the second checkbox and label */
 .checkContainerTwo {
   width: 85px;
 }
 
-.search-button {
-  background: transparent;
-  border: none;
-  outline: none;
-  margin-left: -50px;
-  margin-right: 20px;
-}
-
-.search-button img {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
+/* pointer event */
+.hover {
+  cursor: pointer;
 }
