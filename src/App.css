@@ -2,11 +2,11 @@ body {
   padding: 5% 0%;
   margin: 0;
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 .cp_spend {
   text-align: right;
@@ -21,36 +21,36 @@ thead {
 }
 
 table {
-  border: 2px solid #BDC2C5;
+  border: 2px solid #bdc2c5;
 }
 
 td {
   text-transform: uppercase;
-} 
+}
 
 .search-box {
   margin-bottom: 30px;
   display: inline-block;
-  border-right: 1px solid #DADCDE;
+  border-right: 1px solid #dadcde;
 }
 
 .resultNumb {
   padding-bottom: 10px;
 }
 
-.form-cheak{
+.form-cheak {
   top: 67px;
   left: 575px;
   width: 12px;
   height: 7px;
   /* UI Properties */
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   opacity: 1;
 }
 
 /* State select box */
 select {
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
   height: 32px;
   padding: 5px 35px 5px 10px;
   margin: 0px 15px 0px 0px;
@@ -63,17 +63,16 @@ select {
 
 /* Input text */
 input[type="text"] {
-box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-height: 32px;
-border:1px solid #ccc;
-margin: 0px 15px 0px 15px;
-width: 240px;
-padding: 0px 10px;
-border-radius: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 32px;
+  border: 1px solid #ccc;
+  margin: 0px 15px 0px 15px;
+  width: 240px;
+  padding: 0px 10px;
+  border-radius: 1px;
 }
-
 
 /* Position the checkboxes */
 .checkContainer {
@@ -108,7 +107,7 @@ border-radius: 1px;
   height: 18px;
   width: 18px;
   background-color: transparent;
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   border-radius: 1px;
 }
 
@@ -119,7 +118,7 @@ border-radius: 1px;
 
 /* When the checkbox is checked, add a blue background */
 .checkContainer input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
