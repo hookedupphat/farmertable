@@ -54,7 +54,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(./images/arrow-down.png) 96% / 8% no-repeat #fff;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAM3RFWHRDb21tZW50AHhyOmQ6REFGSHE2dGRGVDg6MyxqOjMxNjYzMDM3MzAyLHQ6MjIwNzI4MDMdjTlhAAABI0lEQVR4nO3WMW7CMBSA4Z9OHXOE3KDIU0d6EzgCPkGr7t6ZWk5SNjYDC2LrFVBP0CGphBRsgt+LCtL7JYRkvTifIiI84sYb/TfgUgaUZkBpBpRmQGkGlJYG+lgDFcFtB7u7j4/AGNgT3M+5kYfM5d/ABh8/hrDhYwWs288iNZYD7trvqTqywX3RPD2AfWo0B5wwBLKLWxLce2o8/5I0m62Ap3blk+Bmyrhp7pLLb7EWsgDXD6iBLMT1B0qQAtx1wBQS5gR3TMyPW1xVgrseeB65BV46SAVcGbAPUglXDswhodbCyYCQQtYo4UDjNNNF/vVGcK/S7XN/df1qfncTYHmyOtPAgfZ50Mdn4EhwB60t7/jAeiMZUJoBpRlQmgGlGVDaLwq6bfsbZ6dLAAAAAElFTkSuQmCC)
+    96% / 8% no-repeat #fff;
   border-radius: 1px;
 }
 
