@@ -3,13 +3,6 @@ import React, { useEffect, useState } from "react"
 const DisplayTable = ({ data }) => {
   const [list, setList] = useState([])
 
-// Sort names on click of column name
-  const sortNames = event => {
-    // Sort header onclick event
-    console.log(event.target);
-    
-  };
-
   useEffect(() => {
     setList(data)
   }, [data])
@@ -22,6 +15,13 @@ const DisplayTable = ({ data }) => {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   })
+
+// Sort names on click of column name
+  function handleSort() {
+    const sortedData = [data].sort((a,b) => {
+      return a.first > b.first ? 1 : -1
+    })
+  }
 
 // loop to map and return JSON data 
   let tb_data = list.map((item) => {
@@ -47,7 +47,7 @@ const DisplayTable = ({ data }) => {
       <table className="table">
         <thead>
           <tr>
-            <th className="hover" onClick={sortNames}>
+            <th className="hover" onClick={handleSort}>
               Farmer Name{" "}
               <img
                 src="./down-arrow.png"
