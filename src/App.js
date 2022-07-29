@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import DisplayTable from "./components/DisplayTable"
 import Filters from "./components/Filters"
 
-// Variables and state for filter 
+// Variables 
 const App = () => {
   const [data, setData] = useState([])
   const [filteredData, setFilteredData] = useState([])
@@ -15,13 +15,14 @@ const App = () => {
     callAPI()
   }, [])
 
+// 
   useEffect(() => {
     filter()
   }, [name, selectedState, isCrop, isSeed])
 
 // Fetch data from JSON file 
   const callAPI = () => {
-    fetch("./data.json")
+    fetch('./data.json')
       .then((response) => response.json())
       .then(({ data }) => {
         setData(data)
@@ -44,9 +45,11 @@ const App = () => {
     setFilteredData(filterd)
   }
 
+
 // Display filter and table 
   return (
     <div className="container">
+
       <Filters
         setSelectedState={setSelectedState}
         setName={setName}
